@@ -1,0 +1,35 @@
+.ul {
+    display: flex;
+    width: calc((95/100) * var(--width-bar-hover));
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    list-style-type: none;
+    margin-right: 0;
+    padding: 0;
+}
+
+.li {
+    display: flex;
+    justify-content: end;
+    margin: 0 7px;
+    rotate: 0deg;
+    padding: 0;
+}
+
+.icon {
+    position: relative;
+    text-decoration: none;
+    padding: 5px 2.5px 0 2.5px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    scale: 1.4;
+    background: no-repeat linear-gradient(to top, var(--yellow-transparent), transparent);
+    background-size: 100% 0%;
+}
+
+.icon:hover {
+    color: rgb(255, 255, 0);
+    padding-bottom: 7px;
+    background-size: 100% 100%;
+}
