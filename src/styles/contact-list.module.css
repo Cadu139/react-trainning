@@ -12,24 +12,29 @@
 .li {
     display: flex;
     justify-content: end;
-    margin: 0 7px;
-    rotate: 0deg;
-    padding: 0;
+    margin: 0;
+    rotate: 180deg;
+    transition: 0.1s;
+    padding: 10px;
+    background: no-repeat linear-gradient(to bottom, var(--yellow-transparent), transparent);
+    background-size: 100% 0%;
 }
 
 .icon {
     position: relative;
     text-decoration: none;
-    padding: 5px 2.5px 0 2.5px;
     color: rgb(255, 255, 255);
     transition: 0.2s;
     scale: 1.4;
-    background: no-repeat linear-gradient(to top, var(--yellow-transparent), transparent);
-    background-size: 100% 0%;
+    rotate: 180deg;
 }
 
-.icon:hover {
+.li:hover {
+    transition: 0.37s;
+    background-size: 100% 100%;
+}
+
+.li:hover .icon {
     color: rgb(255, 255, 0);
     padding-bottom: 7px;
-    background-size: 100% 100%;
 }
