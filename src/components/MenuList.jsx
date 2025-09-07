@@ -1,22 +1,20 @@
 
+import { CircleQuestionMarkIcon, LibraryIcon, CircleUserIcon } from 'lucide-react'
 import s from '../styles/menu-list.module.css'
 
 function MenuList() {
 	return (
 		<ul className={s.ul}>
 			<li className={s.li}>
-				<ion-icon className={s.icon} name="person-circle-outline">
-				</ion-icon>
+				<CircleUserIcon className={s.icon}/>
 				<a href="/profile.html">My Account</a>
 			</li>
 			<li className={s.li}>
-				<ion-icon className={s.icon} name="search">
-				</ion-icon>
-				<a href="/explore.html">Explore</a>
+				<LibraryIcon className={s.icon}/>
+				<a href="/explore.html">Discover</a>
 			</li>
 			<li className={s.li}>
-				<ion-icon className={s.icon} name="help-circle">
-				</ion-icon>
+				<CircleQuestionMarkIcon className={s.icon}/>
 				<a href="/how-to-use.html">How to use?</a>
 			</li>
 		</ul>
