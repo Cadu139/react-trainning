@@ -1,5 +1,5 @@
 
-nav {
+.nav {
     position: fixed;
     z-index: 2;
     top: 0;
@@ -17,12 +17,12 @@ nav {
     border-bottom-right-radius: calc(var(--width-bar));
 }
 
-nav:hover {
+.nav:hover {
     width: var(--width-bar-hover);
     border-bottom-right-radius: calc(var(--width-bar) / 2);
 }
 
-#dim-screen {
+.dimScreen {
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -33,6 +33,6 @@ nav:hover {
     transition: 0.25s;
 }
 
-nav:hover + #dim-screen {
+.nav:hover + .dimScreen {
     background-color: rgba(0, 0, 0, 0.5);
 }

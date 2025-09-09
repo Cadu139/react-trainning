@@ -1,6 +1,7 @@
 
 :root {
     --width-bar: 50px;
+    --width-screen: calc(100vw - var(--width-bar));
     --width-bar-hover: 220px;
     --z-bar: 2;
     --z-body: 0;
@@ -16,13 +17,10 @@
 
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100vw - var(--width-bar));
-    height: 100%;
-    margin: 0;
-    margin-left: var(--width-bar);
-    padding: 0;
+    align-items: start;
+    justify-content: start;
+    width: var(--width-screen);
+    height: 100vh;
+    margin: 0 0 0 var(--width-bar);
     font-family: "JetBrains Mono", Arial, monospace;
-    background: no-repeat radial-gradient(circle at top, var(--purple-transparent) 5%, transparent 40%);
 }

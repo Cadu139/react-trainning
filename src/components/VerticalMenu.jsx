@@ -2,18 +2,18 @@
 import MenuList from './MenuList'
 import ContactList from './ContactList'
 
-import '../styles/vertical-menu.module.css'
+import s from '../styles/vertical-menu.module.css'
 
 function VerticalMenu() {
 
 	return (
 		<div>
-			<nav>
+			<nav className={s.nav}>
 				<MenuList />
 				<ContactList />
 			</nav>
 
-			<div id="dim-screen"></div>
+			<div className={s.dimScreen}></div>
 		</div>
 	)
 }
